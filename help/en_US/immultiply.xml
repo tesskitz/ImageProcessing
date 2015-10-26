@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="im2double" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>immultiply</refname>
+
+		<refpurpose>Multiplication of two images or image with a scalar value.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+                     <synopsis>output_image = immultiply(input_image1,input_image2);</synopsis>
+                     <synopsis>output_image = immultiply(input_image1,value1);</synopsis>
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_image1 and input_image2:</term>
+				<listitem><para>the image matrix used for multiplication</para></listitem>
+			</varlistentry>
+                        <varlistentry><term>value:</term>
+				<listitem><para>the scalar value used for multiplication</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function used for the multiplication of 2 images or multiplication of image with a scalar value.
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img1.jpg");
+                                                        b = imread("/home/Pictures/img2.jpg");
+							c = immultiply(a,b);
+                                                        d = immultiply(a,2);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>

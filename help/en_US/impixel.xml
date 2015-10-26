@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="im2double" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>impixel</refname>
+
+		<refpurpose>Find the value of pixels in the specified image.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+                     <synopsis>output_image = impixel(input_image,c,r);</synopsis>
+                   
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_image</term>
+				<listitem><para>the image matrix used for the function</para></listitem>
+			</varlistentry>
+                        <varlistentry><term>c:</term>
+				<listitem><para>coordinates</para></listitem>
+			</varlistentry>
+                         <varlistentry><term>r:</term>
+				<listitem><para>coordinates</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function used for find the value of pixels in the specified image.
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img1.jpg");
+                                                        c = [1 2 3];
+							r = [1 2 3];
+                                                        d = impixel(a,c,r);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>

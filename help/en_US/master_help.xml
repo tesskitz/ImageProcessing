@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a26a8c657702422c386e9c54debe0361c SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/applycform.xml">
+<!ENTITY a089d41521278f3d8485471fd10890779 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/bwconvexhull.xml">
+<!ENTITY a3b599fd28890c258b5f0df9378ab077d SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/fftshift.xml">
+<!ENTITY ad763db07c8bf860ba2d194bc1aad35f9 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/ifftshift.xml">
+<!ENTITY ae7d7ef7026733bcae031295e9d41a176 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imabsdiff.xml">
+<!ENTITY adca0eb7e9562aada389211d05430c9c9 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imadd.xml">
+<!ENTITY a62663a2545199fd1583e403f549cec48 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imcomplement.xml">
+<!ENTITY a7ed3c789de33637327f523eb7dcb01bf SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imcontour.xml">
+<!ENTITY a1cc86e66e7a4f9b8517ecf55bf2c5cda SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imlincomb.xml">
+<!ENTITY a260be41f49cff1d389d98295346d446c SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/immdivide.xml">
+<!ENTITY a561e06ab1eeeb6ca2c8d6678309b29c9 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/immultiply.xml">
+<!ENTITY a361d7a22eb52bfb158d285a64048ca16 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/impixel.xml">
+<!ENTITY adce737a2e56bcf9177016d6a02f2f1ec SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/impyramid.xml">
+<!ENTITY a69aba66ac736cb078a21328dab2c4d5b SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imread.xml">
+<!ENTITY aafd4b589224b9a9827f5791851ec84f8 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imsubtract.xml">
+<!ENTITY a2bb15f773f4e99d2619f570cd110ac75 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/lab2double.xml">
+<!ENTITY a7ad88c723a87d48836d74dd27f2adcc8 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/lab2rgb.xml">
+<!ENTITY a4b9365199df244956fbc646ca32f2152 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/lab2uint16.xml">
+<!ENTITY a0620d44f4a7229eefe5d4938b1c98d5c SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/lab2uint8.xml">
+<!ENTITY a55a9c5d224c325ca5ccb0699eff2f550 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/lab2xyz.xml">
+<!ENTITY ae8f7bb8266c2dfa90ec94f6d3d8c6100 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/makecform.xml">
+<!ENTITY af366f9f72fdd8985ae16c06cb2d396a0 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/ntsc2rgb.xml">
+<!ENTITY ac97ef9337aabc95be3847f90fd3a36d0 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2lab.xml">
+<!ENTITY a6bf69a332d5faef2ae53857bd24fbbcd SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2ntsc.xml">
+<!ENTITY a85378ea1adb14769b7a5d97fce560a43 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2xyz.xml">
+<!ENTITY a3fda75316735de16146af62d481465f4 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/watershed.xml">
+<!ENTITY a145c2b5b73a9c6567bee7bb9a218d0e2 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/whitepoint.xml">
+<!ENTITY a110f77118c45f53e8aea6570822d993b SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/xyz2double.xml">
+<!ENTITY a7ce52444e552ceded496fd95d63dbf68 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/xyz2lab.xml">
+<!ENTITY a39e4cbd2f6c152b3f1f43e5e54c7618a SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/xyz2rgb.xml">
+<!ENTITY a2c13763dc9e2b36bd846aca49caa3d61 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/xyz2uint16.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='image_processing_toolbox_manual'>
+    <title>Image Processing Toolbox</title>
+  </info>
+
+<part xml:id='section_a2a2c25abf5211bd486cd08d1a6437a8'>
+<title>Image Processing Toolbox</title>
+&a26a8c657702422c386e9c54debe0361c;
+&a089d41521278f3d8485471fd10890779;
+&a3b599fd28890c258b5f0df9378ab077d;
+&ad763db07c8bf860ba2d194bc1aad35f9;
+&ae7d7ef7026733bcae031295e9d41a176;
+&adca0eb7e9562aada389211d05430c9c9;
+&a62663a2545199fd1583e403f549cec48;
+&a7ed3c789de33637327f523eb7dcb01bf;
+&a1cc86e66e7a4f9b8517ecf55bf2c5cda;
+&a260be41f49cff1d389d98295346d446c;
+&a561e06ab1eeeb6ca2c8d6678309b29c9;
+&a361d7a22eb52bfb158d285a64048ca16;
+&adce737a2e56bcf9177016d6a02f2f1ec;
+&a69aba66ac736cb078a21328dab2c4d5b;
+&aafd4b589224b9a9827f5791851ec84f8;
+&a2bb15f773f4e99d2619f570cd110ac75;
+&a7ad88c723a87d48836d74dd27f2adcc8;
+&a4b9365199df244956fbc646ca32f2152;
+&a0620d44f4a7229eefe5d4938b1c98d5c;
+&a55a9c5d224c325ca5ccb0699eff2f550;
+&ae8f7bb8266c2dfa90ec94f6d3d8c6100;
+&af366f9f72fdd8985ae16c06cb2d396a0;
+&ac97ef9337aabc95be3847f90fd3a36d0;
+&a6bf69a332d5faef2ae53857bd24fbbcd;
+&a85378ea1adb14769b7a5d97fce560a43;
+&a3fda75316735de16146af62d481465f4;
+&a145c2b5b73a9c6567bee7bb9a218d0e2;
+&a110f77118c45f53e8aea6570822d993b;
+&a7ce52444e552ceded496fd95d63dbf68;
+&a39e4cbd2f6c152b3f1f43e5e54c7618a;
+&a2c13763dc9e2b36bd846aca49caa3d61;
+</part>
+</book>

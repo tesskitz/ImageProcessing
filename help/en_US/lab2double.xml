@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="blur" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>lab2double</refname>
+
+		<refpurpose>Convert data type.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+
+		<synopsis>List output_matrix = lab2double(List input_matrix);</synopsis>
+                
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_matrix :</term>
+				<listitem><para>the image matrix on which conversion has to be applied</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function convert lab data to double:
+			<inlinemediaobject><imageobject><imagedata fileref = "pic1.png" align = "center"/></imageobject></inlinemediaobject>
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img.jpg");
+                                                        b=rgb2lab(a);
+                                                        c=lab2double(b);
+							imshow(b);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>

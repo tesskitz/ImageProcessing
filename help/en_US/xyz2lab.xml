@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="blur" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>xyz2lab</refname>
+
+		<refpurpose>Change color space.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+
+		<synopsis>List output_matrix = xyz2lab(List input_matrix);</synopsis>
+                <synopsis>List output_matrix = xyz2lab(List input_matrix,Name,value);</synopsis>
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_matrix :</term>
+				<listitem><para>the image matrix on which color space conversion has to be applied</para></listitem>
+			</varlistentry>
+			<varlistentry><term>Name:</term>
+				<listitem><para>Color Space of Input values or Reference white point</para></listitem>
+			</varlistentry>
+			<varlistentry><term>Value :</term>
+				<listitem><para>Color space of the input RGB values, specified as the text string ‘srgb' or ‘adobe-rgb-1998',or whitepoint values 'd65' (default) | 'a' | 'c' | 'd50' | 'icc' | 'e' | 1-by-3 vector</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function change colorspace of an image or matrix from  xyz to lab:
+			<inlinemediaobject><imageobject><imagedata fileref = "pic1.png" align = "center"/></imageobject></inlinemediaobject>
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img.jpg");
+                                                        b=xyz2lab(a);
+							b=xyz2lab(a,"whitepoint","d65");
+							imshow(b);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>

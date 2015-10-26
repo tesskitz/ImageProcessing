@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="blur" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>bwconvexhull</refname>
+
+		<refpurpose>Generate convexhull image of input image.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+
+		<synopsis>List output_matrix = bwconvexhull(List input_matrix);</synopsis>
+                <synopsis>List output_matrix = bwconvexhull(List input_matrix,"Object",n);</synopsis>
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_matrix :</term>
+				<listitem><para>the image matrix on which change has to be applied</para></listitem>
+			</varlistentry>
+			<varlistentry><term>n :</term>
+				<listitem><para>'n' is line connectivity of output image.It must be 4 or 8.</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function used to draw the convex hull image of input image:
+			<inlinemediaobject><imageobject><imagedata fileref = "pic1.png" align = "center"/></imageobject></inlinemediaobject>
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img.jpg");
+							b=bwconvexhull(a);
+                                                        or
+                                                        b=bwconvexhull(a,"Object",8);
+							imshow(b);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>
