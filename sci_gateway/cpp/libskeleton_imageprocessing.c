@@ -38,6 +38,7 @@ extern Gatefunc opencv_bwconvhull;
 extern Gatefunc opencv_imcontour;
 extern Gatefunc opencv_lab2uint16;
 extern Gatefunc opencv_xyz2uint16;
+extern Gatefunc opencv_imfindcircles;
 static GenericTable Tab[]={
   {(Myinterfun)sci_gateway_without_putlhsvar,opencv_imread,"imread"},
   {(Myinterfun)sci_gateway_without_putlhsvar,opencv_rgb2lab,"rgb2lab"},
@@ -71,6 +72,7 @@ static GenericTable Tab[]={
   {(Myinterfun)sci_gateway_without_putlhsvar,opencv_imcontour,"imcontour"},
   {(Myinterfun)sci_gateway_without_putlhsvar,opencv_lab2uint16,"lab2uint16"},
   {(Myinterfun)sci_gateway_without_putlhsvar,opencv_xyz2uint16,"xyz2uint16"},
+  {(Myinterfun)sci_gateway_without_putlhsvar,opencv_imfindcircles,"imfindcircles"},
 };
  
 int C2F(libskeleton_imageprocessing)()

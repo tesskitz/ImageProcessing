@@ -9,6 +9,7 @@
 <!ENTITY adca0eb7e9562aada389211d05430c9c9 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imadd.xml">
 <!ENTITY a62663a2545199fd1583e403f549cec48 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imcomplement.xml">
 <!ENTITY a7ed3c789de33637327f523eb7dcb01bf SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imcontour.xml">
+<!ENTITY add1c67ff21a65cdef3d589de7cc25d81 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imfindcircles.xml">
 <!ENTITY a1cc86e66e7a4f9b8517ecf55bf2c5cda SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/imlincomb.xml">
 <!ENTITY a260be41f49cff1d389d98295346d446c SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/immdivide.xml">
 <!ENTITY a561e06ab1eeeb6ca2c8d6678309b29c9 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/immultiply.xml">
@@ -56,6 +57,7 @@
 &adca0eb7e9562aada389211d05430c9c9;
 &a62663a2545199fd1583e403f549cec48;
 &a7ed3c789de33637327f523eb7dcb01bf;
+&add1c67ff21a65cdef3d589de7cc25d81;
 &a1cc86e66e7a4f9b8517ecf55bf2c5cda;
 &a260be41f49cff1d389d98295346d446c;
 &a561e06ab1eeeb6ca2c8d6678309b29c9;
