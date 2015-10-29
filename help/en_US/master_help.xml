@@ -27,6 +27,7 @@
 <!ENTITY ac97ef9337aabc95be3847f90fd3a36d0 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2lab.xml">
 <!ENTITY a6bf69a332d5faef2ae53857bd24fbbcd SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2ntsc.xml">
 <!ENTITY a85378ea1adb14769b7a5d97fce560a43 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/rgb2xyz.xml">
+<!ENTITY a757aeea48cc8197dcff928393b50d293 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/viscircles.xml">
 <!ENTITY a3fda75316735de16146af62d481465f4 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/watershed.xml">
 <!ENTITY a145c2b5b73a9c6567bee7bb9a218d0e2 SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/whitepoint.xml">
 <!ENTITY a110f77118c45f53e8aea6570822d993b SYSTEM "/home/tess/Desktop/ImageProcessing/help/en_US/xyz2double.xml">
@@ -75,6 +76,7 @@
 &ac97ef9337aabc95be3847f90fd3a36d0;
 &a6bf69a332d5faef2ae53857bd24fbbcd;
 &a85378ea1adb14769b7a5d97fce560a43;
+&a757aeea48cc8197dcff928393b50d293;
 &a3fda75316735de16146af62d481465f4;
 &a145c2b5b73a9c6567bee7bb9a218d0e2;
 &a110f77118c45f53e8aea6570822d993b;

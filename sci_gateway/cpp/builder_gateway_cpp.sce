@@ -33,7 +33,8 @@ names = [
            "imcontour","opencv_imcontour"; 
            "lab2uint16","opencv_lab2uint16"; 
            "xyz2uint16","opencv_xyz2uint16"; 
-            "imfindcircles","opencv_imfindcircles"; 
+           "imfindcircles","opencv_imfindcircles";
+           "viscircles","opencv_viscircles"; 
 		];
 
 files = [
@@ -69,6 +70,7 @@ files = [
             "opencv_lab2uint16.cpp",
             "opencv_xyz2uint16.cpp",
             "opencv_imfindcircles.cpp",
+            "opencv_viscircles.cpp",
 		];
  
 

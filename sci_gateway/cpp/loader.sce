@@ -43,6 +43,7 @@ list_functions = [ 'imread';
                    'lab2uint16';
                    'xyz2uint16';
                    'imfindcircles';
+                   'viscircles';
 ];
 addinter(libskeleton_imagepr_path + filesep() + 'libskeleton_imageprocessing' + getdynlibext(), 'libskeleton_imageprocessing', list_functions);
 // remove temp. variables on stack

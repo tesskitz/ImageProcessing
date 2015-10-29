@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="blur" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>viscircles</refname>
+
+		<refpurpose>Find circles using circular Hough transform and displaying.</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+
+		<synopsis>output_image= imfindcircles(input_image,centers,radii);</synopsis>
+                <synopsis>output_image= imfindcircles(input_image,centers,radii,"Edgecolor","color");</synopsis>
+                <synopsis>output_image= imfindcircles(input_image,centers,radii,"Linewidth",value);</synopsis>
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_image:</term>
+				<listitem><para>the image matrix on which change has to be applied</para></listitem>
+			</varlistentry>
+			<varlistentry><term>centers :</term>
+				<listitem><para> centers is a output argument show the center values of new circles(Stores in 2 item list)</para></listitem>
+			</varlistentry>
+                        <varlistentry><term>radii :</term>
+				<listitem><para> radii is a output argument show the radii values of new circles</para></listitem>
+			</varlistentry>
+                        <varlistentry><term>Edgecolor :</term>
+				<listitem><para>It is a string value in doublequotes .</para></listitem>
+			</varlistentry>
+                         <varlistentry><term>Linewidth :</term>
+				<listitem><para>It is a string value in doublequotes .</para></listitem>
+			</varlistentry>
+                         <varlistentry><term>Color:</term>
+				<listitem><para>It is a string value in doublequotes used to specify color .Value must be either of these 'b' ,'r', 'g','m','c','y''k' or 'w' .</para></listitem>
+			</varlistentry>
+                         <varlistentry><term>value:</term>
+				<listitem><para>It is a integer value used to specify color .</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function used to find the circles in a image and displaying:
+			<inlinemediaobject><imageobject><imagedata fileref = "pic1.png" align = "center"/></imageobject></inlinemediaobject>
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/Coin.jpg");
+							[centers,radii]=imfindcircles(a,10,30);
+                                                        c=viscircles(a,centers,radii);
+                                                        c=viscircles(a,centers,radii,"Edgecolor","b");
+                                                        c=viscircles(a,centers,radii,"Linewidth",2);
+							
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>
