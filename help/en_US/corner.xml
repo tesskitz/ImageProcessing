@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry version="5.0-subset Scilab" xml:id="blur" xml:lang="en_US"
+					xmlns="http://docbook.org/ns/docbook"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					xmlns:svg="http://www.w3.org/2000/svg"
+					xmlns:ns3="http://www.w3.org/1999/xhtml"
+					xmlns:mml="http://www.w3.org/1998/Math/MathML"
+					xmlns:db="http://docbook.org/ns/docbook">
+
+	<refnamediv>
+		<refname>corner</refname>
+
+		<refpurpose>Find the corner points in an input image .</refpurpose>
+	</refnamediv>
+
+	<refsynopsisdiv>
+		<title>Calling Sequence</title>
+
+		<synopsis>output_image = corner(input_image);</synopsis>
+                <synopsis>output_image = corner(input_image,"Method",name);</synopsis>
+	</refsynopsisdiv>
+	
+	<refsection>
+   		<title>Arguments</title>
+		<variablelist>
+			<varlistentry><term>input_image :</term>
+				<listitem><para>the image matrix on which change has to be applied</para></listitem>
+			</varlistentry>
+			<varlistentry><term>name :</term>
+				<listitem><para>'name' is name of the method for finding corner points.Its value should be 'Harris' or 'Mineigenvalue'</para></listitem>
+			</varlistentry>
+		</variablelist>
+	</refsection>
+	
+	<refsection>
+		<title>Description</title>
+		<para>
+			The function used to find and show corner points in an image:
+			<inlinemediaobject><imageobject><imagedata fileref = "pic1.png" align = "center"/></imageobject></inlinemediaobject>
+		</para>
+	</refsection>
+
+	<refsection>
+		<title>Example</title>
+		<programlisting role="example"><![CDATA[
+							a = imread("/home/Pictures/img.jpg");
+							b=corner(a);
+                                                        or
+                                                        b=corner(a,"Method","Harris");
+							imshow(b);
+   		]]></programlisting>
+	</refsection>
+
+	<refsection>
+		<title>Authors</title>
+
+		<simplelist type="vert">
+			<member>Tess Zacharias</member>
+		</simplelist>
+	</refsection>
+</refentry>
