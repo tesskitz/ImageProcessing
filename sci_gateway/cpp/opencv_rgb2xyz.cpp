@@ -347,6 +347,8 @@ int opencv_rgb2xyz(char *fname, unsigned long fname_len)
         r1=(double *)malloc(sizeof(double)*img.rows*img.cols);
         g1=(double *)malloc(sizeof(double)*img.rows*img.cols);
         b1=(double *)malloc(sizeof(double)*img.rows*img.cols);
+        iRows=img.rows;
+        iCols=img.cols;
         for(int i=0;i<img.rows;i++)  
           {
             for(int j=0;j<img.cols;j++)
@@ -370,9 +372,9 @@ int opencv_rgb2xyz(char *fname, unsigned long fname_len)
                      out=rgb2xyz3(R,G,B,"image",pstData1);
                     }
                   }
-                  r1[m]=out.X;
-                  g1[m]=out.Y;
-                  b1[m++]=out.Z;  
+                  r1[i+iRows*j]=out.X;
+                  g1[i+iRows*j]=out.Y;
+                  b1[i+iRows*j]=out.Z;  
                 }
             }
          sciErr = createList(pvApiCtx, nbInputArgument(pvApiCtx) + 1, 3, &piAddrNew);
