@@ -35,6 +35,7 @@ names = [
            "xyz2uint16","opencv_xyz2uint16"; 
            "imfindcircles","opencv_imfindcircles";
            "viscircles","opencv_viscircles"; 
+           "corner","opencv_corner"; 
 		];
 
 files = [
@@ -71,6 +72,7 @@ files = [
             "opencv_xyz2uint16.cpp",
             "opencv_imfindcircles.cpp",
             "opencv_viscircles.cpp",
+            "opencv_corner.cpp",
 		];
  
 
