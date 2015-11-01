@@ -119,6 +119,8 @@ int opencv_rgb2ntsc(char *fname, unsigned long fname_len)
         r1=(double *)malloc(sizeof(double)*img.rows*img.cols);
         g1=(double *)malloc(sizeof(double)*img.rows*img.cols);
         b1=(double *)malloc(sizeof(double)*img.rows*img.cols);
+        iRows=img.rows;
+        iCols=img.cols;
         for(int i=0;i<img.rows;i++)  
           {
             for(int j=0;j<img.cols;j++)
@@ -128,9 +130,9 @@ int opencv_rgb2ntsc(char *fname, unsigned long fname_len)
                   float G= intensity.val[1];
                   float B= intensity.val[0];
                   out=rgb2ntsc(R,G,B,"image");
-                  r1[m]=out.Y;
-                  g1[m]=out.I;
-                  b1[m++]=out.Q;  
+                  r1[i+iRows*j]=out.Y;
+                  g1[i+iRows*j]=out.I;
+                  b1[i+iRows*j]=out.Q;  
                 }
             }
          sciErr = createList(pvApiCtx, nbInputArgument(pvApiCtx) + 1, 3, &piAddrNew);
